@@ -27,6 +27,7 @@
 // }
 
 // export default App;
+// ---------------------------------------
 
 
 // import React from "react";
@@ -72,7 +73,7 @@
 // export default App;
 // ----------------------------------------------
 
-// Hooks
+// *Hooks
 // --------------------------------
 // import React from "react";
 // import { useState } from "react";
@@ -155,37 +156,74 @@
 // export default App;
 // ----------------------------------------
 
- import React, { useState } from "react";
+//  import React, { useState } from "react";
 
-function App() {
+// function App() {
 
-  const [name, setName] = useState("");
-  const [age, setAge] = useState("");
+//   const [name, setName] = useState("");
+//   const [age, setAge] = useState("");
 
-  return (
-    <div>
+//   return (
+//     <div>
 
-      <input
-        type="text"
-        value={name}
-        onChange={(e) => setName(e.target.value)}
-      />
+//       <input
+//         type="text"
+//         value={name}
+//         onChange={(e) => setName(e.target.value)}
+//       />
 
-      <br />
-      <br />
+//       <br />
+//       <br />
 
-      <input
-        type="number"
-        value={age}
-        onChange={(e) => setAge(e.target.value)}
-      />
+//       <input
+//         type="number"
+//         value={age}
+//         onChange={(e) => setAge(e.target.value)}
+//       />
 
-      <h2>Name: {name}</h2>
-      <h2>Age: {age}</h2>
+//       <h2>Name: {name}</h2>
+//       <h2>Age: {age}</h2>
 
-    </div>
-  );
-}
+//     </div>
+//   );
+// }
 
-export default App;
+// export default App;
+// ------------------------------------------------------
+// import React, { useState } from "react";
+
+// function App() {
+
+//   const [task, setTask] = useState("");
+//   const [tasks, setTasks] = useState([]);
+
+//   const addTask = () => {
+//     if (task !== "") {
+//       setTasks([...tasks, task]);
+//       setTask("");
+//     }
+//   };
+
+//   return (
+//     <div>
+
+//       <input
+//         type="text"
+//         value={task}
+//         onChange={(e) => setTask(e.target.value)}
+//       />
+
+//       <button onClick={addTask}>Add</button>
+
+//       <ul>
+//         {tasks.map((item, index) => (
+//           <li key={index}>{item}</li>
+//         ))}
+//       </ul>
+
+//     </div>
+//   );
+// }
+
+// export default App;
 

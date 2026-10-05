@@ -97,18 +97,35 @@
 // export default App;
 
 // ---------------------------------------------
-// import React from "react";
-// import React, {useState} from "react";
+//  import React, { useState } from "react";
 
-// function App(){
-//   const [show, setshow] = useState(true);
+// function App() {
+
+//   const [text, setText] = useState("");
+//   const [show, setShow] = useState(false);
 
 //   return (
 //     <div>
-//       <button onClick={()=> setshow(!show)}>show/Hide</button>
+
+//       <input
+//         type="text"
+//         value={text}
+//         onChange={(e) => setText(e.target.value)}
+//       />
+
+//       <h1>You typed: {text}</h1>
+
+//       <button onClick={() => setShow(!show)}>
+//         Show/Hide
+//       </button>
+
+//       {show && <p>This is some text</p>}
+
 //     </div>
-//   )
+//   );
 // }
+
+// export default App;
 // ----------------------------------------
 
 // import React, { useState } from "react";
@@ -156,37 +173,55 @@
 // export default App;
 // ----------------------------------------
 
- import React, { useState } from "react";
+//  import React, { useState } from "react";
+
+// function App() {
+
+//   const [name, setName] = useState("");
+//   const [age, setAge] = useState("");
+
+//   return (
+//     <div>
+
+//       <input
+//         type="text"
+//         value={name}
+//         onChange={(e) => setName(e.target.value)}
+//       />
+
+//       <br />
+//       <br />
+
+//       <input
+//         type="number"
+//         value={age}
+//         onChange={(e) => setAge(e.target.value)}
+//       />
+
+//       <h2>Name: {name}</h2>
+//       <h2>Age: {age}</h2>
+
+//     </div>
+//   );
+// }
+
+// export default App;
+// -----------------------------------------------
+// *UseEffect 
+
+import React, { useEffect } from "react";
 
 function App() {
 
-  const [name, setName] = useState("");
-  const [age, setAge] = useState("");
+    useEffect(() => {
+        console.log("Hello");
+    });
 
-  return (
-    <div>
-
-      <input
-        type="text"
-        value={name}
-        onChange={(e) => setName(e.target.value)}
-      />
-
-      <br />
-      <br />
-
-      <input
-        type="number"
-        value={age}
-        onChange={(e) => setAge(e.target.value)}
-      />
-
-      <h2>Name: {name}</h2>
-      <h2>Age: {age}</h2>
-
-    </div>
-  );
+    return (
+        <div>
+            <h1>Hello React</h1>
+        </div>
+    );
 }
 
 export default App;
-
